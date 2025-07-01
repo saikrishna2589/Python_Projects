@@ -1,0 +1,2 @@
+- Install the libraries with:
+pip install python-docx
