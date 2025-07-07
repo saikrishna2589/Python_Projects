@@ -1,0 +1,56 @@
+<html>
+<style>
+    body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0
+    }
+
+    .custom-style{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    shadow:0 2px 4px #ddd
+    }
+
+    .navbar{
+    background-color: #333
+    color: #fff;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    h1 {
+    margin: 0
+    font-size: 24px
+    }
+    a {
+    color: #333
+    }
+
+</style>
+
+    <body>
+    <div class="navbar">
+        <h1>
+        Latest Business News
+        </h1>
+    </div>
+        {% for article in our_articles %}
+            <div class="custom-style">
+                <a href="{{article.url}}">
+                    {{article.title}}
+                </a>
+
+                <p>
+                    {{article.description}}
+                </p>
+
+            </div>
+        {% endfor %}
+    </body>
+
+
+</html>
