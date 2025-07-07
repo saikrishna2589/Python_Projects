@@ -1,6 +1,6 @@
 import requests
 
-api_Key = '4ab757abe0f042728570a4cfce6d64dc'  # Make sure to keep this secret in production
+api_Key = 'xxxx'  # Make sure to keep this secret in production
 
 def news_api_extract(topic):
     url = "https://newsapi.org/v2/top-headlines"
