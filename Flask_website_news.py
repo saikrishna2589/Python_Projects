@@ -2,7 +2,7 @@ from flask import Flask,render_template
 import requests
 
 
-api_key ='4ab757abe0f042728570a4cfce6d64dc'
+api_key ='Xxxxxxxx'
 url= f"https://newsapi.org/v2/top-headlines?apiKey={api_key}&q=business"
 
 app = Flask(__name__)
