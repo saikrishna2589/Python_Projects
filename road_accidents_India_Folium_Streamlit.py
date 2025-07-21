@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import folium
 from folium.plugins import MarkerCluster
-import streamlit as st  # ✅ You forgot this!
+import streamlit as st
 from streamlit_folium import st_folium
 
 # App Title (must have at least one st command to render)
