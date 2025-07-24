@@ -11,7 +11,6 @@ st.set_page_config(layout='wide')
 st.title('Europe Countries Location')
 #convert data to df
 df = pd.read_csv(data)
-
 #create a folium map object (layout)
 
 map_initial = folium.Map(location=

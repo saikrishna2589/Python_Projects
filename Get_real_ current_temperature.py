@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 load_dotenv() #load environmental variables
 
 API_key = os.getenv('API_key')
-
 def get_temperature(city):
     base_URL = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_key}&units=metric"
     response = requests.get(base_URL)
