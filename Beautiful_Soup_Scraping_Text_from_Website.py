@@ -13,6 +13,7 @@ content = requests.get(url)
 response = content.text   #.content is for pdf webpages or images.
 
 response1= content.headers['Content-Type']
+print(response1)
 #.text is for html text
 
 #now that you have source code, use beautiful soup to extract temperature of NY city from the source code
