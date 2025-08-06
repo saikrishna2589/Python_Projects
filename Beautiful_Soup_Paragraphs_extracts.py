@@ -19,6 +19,6 @@ beautiful_soup_object = BeautifulSoup(response,'html.parser')
 para_finder = beautiful_soup_object.select('p')
 
 with open('para.txt', 'w',encoding='utf-8') as file:
-    for para in para_finder:
-        file.write(para.get_text() +'\n')
+    for i,para in enumerate(para_finder):
+        file.write(f"Paragraph {i} : {para.get_text(separator=" ", strip=True)}'\n'")
 
